@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Zadanie z tabelami
+        1) Stwórz tabelę z pięcioma kolumnami w wierszu. 
+		   Na początku dodaj podpis tabeli w caption jako: 
+		   "Dane w tabeli"
+        2) Dodaj nagłówek czyli thead, a w nim kolejne nazwy kolumn np.
+           Kolumna #1, Kolumna #2 itd
+        3) Dodaj dwa wiersze w tbody z prostą treścią np. kolejne
+           numery komórek od 1 do 5
+        4) Ostatni wiersz wykorzysta specjalny atrybut
+           colspan w drugiej komórce z wartością 4,
+           dzięki czemu zostaną połączone 4 kolumny.
+           Niepotrzebne komórki zapisz w komentarzu
+           aby przeglądarka je zignorowała.
+		5) Dodaj poniższy tag style w sekcji head 
+           dzięki czemu zobaczysz obramowanie tabeli
+			<style>
+				tr, td {
+					border: 1px solid black;
+				}
+			</style>		   
+			
+    -->
+
+    <table>
+        <caption>Dane w tabeli</caption>
+        <thead>
+            <td>Kolumna #1</td>
+            <td>Kolumna #2</td>
+            <td>Kolumna #3</td>
+            <td>Kolumna #4</td>
+            <td>Kolumna #5</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="4"> 2 </td>
+                <!--<td>3</td>
+                <td>4</td>
+                <td>5</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
